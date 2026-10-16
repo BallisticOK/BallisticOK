@@ -17,7 +17,7 @@ I build and run online services, Discord bots, APIs, dashboards, and infrastruct
 
 [![GitHub followers](https://img.shields.io/github/followers/BallisticOK?label=Followers&style=for-the-badge&logo=github&color=14b8a6)](https://github.com/BallisticOK?tab=followers)
 [![GitHub stars](https://img.shields.io/github/stars/BallisticOK?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&logo=github&color=0f766e)](https://github.com/BallisticOK?tab=repositories)
-[![Profile age](https://img.shields.io/badge/Age-<!-- AGE_START -->25<!-- AGE_END -->-14b8a6?style=for-the-badge)](https://github.com/BallisticOK)
+[![Age auto-updated](https://img.shields.io/badge/Age-auto--updated-14b8a6?style=for-the-badge)](https://github.com/BallisticOK)
 [![Website](https://img.shields.io/badge/Website-0x00sec.xyz-0f172a?style=for-the-badge&logo=firefox&logoColor=white)](https://0x00sec.xyz)
 
 </div>
@@ -32,7 +32,7 @@ I build and run online services, Discord bots, APIs, dashboards, and infrastruct
 - 🐳 Interested in Docker, Linux, self-hosting, reverse proxies, and deployment automation.
 - 🎧 Working with music-bot infrastructure, Lavalink/Rainlink, node monitoring, and service APIs.
 - 🧰 I also work on game-server tooling and community projects.
-- 🎂 I'm currently **<!-- AGE_START -->25<!-- AGE_END --> years old**.
+- 🎂 I'm currently **<span data-profile-age>25</span> years old**.
 
 > I don't publish every project or push every update to GitHub. Some of my work is deployed and maintained as live services, so the project links below include both public repositories and live websites.
 
