@@ -224,7 +224,7 @@ The panel below is generated from the **GitHub REST API** by this repository's o
 [![GitHub](https://img.shields.io/badge/GitHub-BallisticOK-0f172a?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BallisticOK)
 [![Website](https://img.shields.io/badge/Website-0x00sec.xyz-0d9488?style=for-the-badge&logo=firefox&logoColor=white)](https://0x00sec.xyz)
 [![YouTube](https://img.shields.io/badge/YouTube-Channel-0f172a?style=for-the-badge&logo=youtube&logoColor=ef4444)](https://www.youtube.com/channel/UC7SVXOIe-lrT_JtAwVoRCCw)
-[![Twitch](https://img.shields.io/badge/Twitch-BallisticOK-0f172a?style=for-the-badge&logo=twitch&logoColor=c4b5fd)](https://www.twitch.tv/ballisticok)
+[![Twitch](https://img.shields.io/badge/Twitch-0x00sec_-0f172a?style=for-the-badge&logo=twitch&logoColor=c4b5fd)](https://www.twitch.tv/0x00sec_)
 [![Discord](https://img.shields.io/badge/Discord-Profile-0f172a?style=for-the-badge&logo=discord&logoColor=818cf8)](https://discordapp.com/users/321590712665636865)
 
 </div>
