@@ -32,8 +32,8 @@ jobs:
           path = Path("README.md")
           content = path.read_text(encoding="utf-8")
           updated, count = re.subn(
-              r"<!-- AGE_START -->\d+<!-- AGE_END -->",
-              f"<!-- AGE_START -->{age}<!-- AGE_END -->",
+              r"(<span data-profile-age>)\d+(</span>)",
+              lambda match: f"{match.group(1)}{age}{match.group(2)}",
               content,
               count=1,
           )
