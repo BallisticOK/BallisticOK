@@ -1,4 +1,4 @@
-name: Update profile age
+name: Refresh profile dashboard
 
 on:
   schedule:
@@ -9,53 +9,144 @@ permissions:
   contents: write
 
 jobs:
-  update-age:
+  refresh-profile:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Calculate and update age
+      - name: Refresh age and live GitHub metrics
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         shell: bash
         run: |
           python3 <<'PY'
-          from datetime import date
+          from datetime import date, datetime, timedelta, timezone
           from pathlib import Path
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError
+          import json
+          import os
           import re
-
+          
+          API = "https://api.github.com"
+          TOKEN = os.environ["GITHUB_TOKEN"]
+          HEADERS = {
+              "Accept": "application/vnd.github+json",
+              "Authorization": f"Bearer {TOKEN}",
+              "X-GitHub-Api-Version": "2022-11-28",
+              "User-Agent": "0x00sec-profile-dashboard",
+          }
+          
+          def get_json(url):
+              request = Request(url, headers=HEADERS)
+              try:
+                  with urlopen(request, timeout=20) as response:
+                      return json.load(response)
+              except HTTPError as exc:
+                  detail = exc.read().decode("utf-8", errors="replace")
+                  raise RuntimeError(f"GitHub API request failed ({exc.code}): {url} — {detail}") from exc
+          
+          # Keep the age calculation automatic.
           birthday = date(2001, 10, 7)
-          today = date.today()
-          age = today.year - birthday.year - (
-              (today.month, today.day) < (birthday.month, birthday.day)
-          )
-
+          today = datetime.now(timezone.utc).date()
+          age = today.year - birthday.year - ((today.month, today.day) < (birthday.month, birthday.day))
+          
+          # Pull the public profile and owned repositories from GitHub itself.
+          profile = get_json(f"{API}/users/BallisticOK")
+          repositories = []
+          for page in range(1, 11):
+              batch = get_json(
+                  f"{API}/users/BallisticOK/repos?type=owner&sort=updated&per_page=100&page={page}"
+              )
+              if not isinstance(batch, list):
+                  raise RuntimeError("Unexpected GitHub repositories API response.")
+              repositories.extend(repo for repo in batch if not repo.get("private", False))
+              if len(batch) < 100:
+                  break
+          
+          # Aggregate original public repositories only; exclude forks from project totals.
+          owned = [repo for repo in repositories if not repo.get("fork", False)]
+          stars = sum(int(repo.get("stargazers_count", 0)) for repo in owned)
+          forks = sum(int(repo.get("forks_count", 0)) for repo in owned)
+          cutoff = datetime.now(timezone.utc) - timedelta(days=30)
+          active_30d = 0
+          for repo in owned:
+              pushed = repo.get("pushed_at")
+              if pushed:
+                  try:
+                      if datetime.fromisoformat(pushed.replace("Z", "+00:00")) >= cutoff:
+                          active_30d += 1
+                  except ValueError:
+                      pass
+          
+          lava = get_json(f"{API}/repos/BallisticOK/LavaStatus")
+          refreshed = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+          
+          def count(value):
+              return f"{int(value):,}"
+          
+          def date_only(value):
+              if not value:
+                  return "Not available"
+              try:
+                  return datetime.fromisoformat(value.replace("Z", "+00:00")).strftime("%Y-%m-%d %H:%M UTC")
+              except ValueError:
+                  return "Not available"
+          
+          metrics = f"""<table>
+          <tr><th align="left">METRIC</th><th align="left">LIVE VALUE</th><th align="left">SOURCE</th></tr>
+          <tr><td>Public repositories</td><td>{count(profile.get("public_repos", len(repositories)))}</td><td>GitHub account API</td></tr>
+          <tr><td>Followers</td><td>{count(profile.get("followers", 0))}</td><td>GitHub account API</td></tr>
+          <tr><td>Following</td><td>{count(profile.get("following", 0))}</td><td>GitHub account API</td></tr>
+          <tr><td>Stars across owned public repositories</td><td>{count(stars)}</td><td>GitHub repositories API · forks excluded</td></tr>
+          <tr><td>Forks across owned public repositories</td><td>{count(forks)}</td><td>GitHub repositories API · forks excluded</td></tr>
+          <tr><td>Owned public repositories pushed in the last 30 days</td><td>{count(active_30d)}</td><td>GitHub repositories API</td></tr>
+          <tr><td>LavaStatus stars</td><td>{count(lava.get("stargazers_count", 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
+          <tr><td>LavaStatus forks</td><td>{count(lava.get("forks_count", 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
+          <tr><td>LavaStatus open issues / PRs</td><td>{count(lava.get("open_issues_count", 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus/issues">GitHub tracker</a></td></tr>
+          <tr><td>LavaStatus primary language</td><td>{lava.get("language") or "Not specified"}</td><td><a href="https://github.com/BallisticOK/LavaStatus">Repository metadata</a></td></tr>
+          <tr><td>LavaStatus last push</td><td>{date_only(lava.get("pushed_at"))}</td><td>GitHub repository API</td></tr>
+          <tr><td>Last successful data refresh</td><td>{refreshed}</td><td>GitHub Actions · UTC</td></tr>
+          </table>"""
+          
           path = Path("README.md")
           content = path.read_text(encoding="utf-8")
-          updated, count = re.subn(
+          
+          updated, age_count = re.subn(
               r"(<span data-profile-age>)\d+(</span>)",
               lambda match: f"{match.group(1)}{age}{match.group(2)}",
               content,
               count=1,
           )
-
-          if count < 1:
-              raise SystemExit("Age markers not found in README.md")
-
-          if updated != content:
-              path.write_text(updated, encoding="utf-8")
-              print(f"Updated README age to {age}.")
-          else:
-              print(f"README age is already correct: {age}.")
+          if age_count != 1:
+              raise SystemExit("Age marker missing or duplicated; expected exactly one marker.")
+          
+          pattern = r"(<!-- PROFILE-DATA:START -->\n).*?(\n<!-- PROFILE-DATA:END -->)"
+          updated, data_count = re.subn(
+              pattern,
+              lambda match: f"{match.group(1)}{metrics}{match.group(2)}",
+              updated,
+              count=1,
+              flags=re.DOTALL,
+          )
+          if data_count != 1:
+              raise SystemExit("Profile data markers missing or duplicated; expected exactly one block.")
+          
+          path.write_text(updated, encoding="utf-8")
+          print(f"Updated profile age to {age}; refreshed GitHub metrics at {refreshed}.")
+          print(f"Counted {len(owned)} owned public repositories for aggregate project totals.")
           PY
 
-      - name: Commit updated README
+      - name: Commit dashboard refresh if changed
+        shell: bash
         run: |
           if git diff --quiet -- README.md; then
-            echo "No age update needed."
+            echo "Profile age and metrics are already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "chore: update profile age"
+          git commit -m "chore: refresh profile dashboard data"
           git push
