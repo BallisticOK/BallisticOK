@@ -96,17 +96,17 @@ jobs:
           
           metrics = f"""<table>
           <tr><th align="left">METRIC</th><th align="left">LIVE VALUE</th><th align="left">SOURCE</th></tr>
-          <tr><td>Public repositories</td><td>{count(profile.get("public_repos", len(repositories)))}</td><td>GitHub account API</td></tr>
-          <tr><td>Followers</td><td>{count(profile.get("followers", 0))}</td><td>GitHub account API</td></tr>
-          <tr><td>Following</td><td>{count(profile.get("following", 0))}</td><td>GitHub account API</td></tr>
+          <tr><td>Public repositories</td><td>{count(profile.get('public_repos', len(repositories)))}</td><td>GitHub account API</td></tr>
+          <tr><td>Followers</td><td>{count(profile.get('followers', 0))}</td><td>GitHub account API</td></tr>
+          <tr><td>Following</td><td>{count(profile.get('following', 0))}</td><td>GitHub account API</td></tr>
           <tr><td>Stars across owned public repositories</td><td>{count(stars)}</td><td>GitHub repositories API · forks excluded</td></tr>
           <tr><td>Forks across owned public repositories</td><td>{count(forks)}</td><td>GitHub repositories API · forks excluded</td></tr>
           <tr><td>Owned public repositories pushed in the last 30 days</td><td>{count(active_30d)}</td><td>GitHub repositories API</td></tr>
-          <tr><td>LavaStatus stars</td><td>{count(lava.get("stargazers_count", 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
-          <tr><td>LavaStatus forks</td><td>{count(lava.get("forks_count", 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
-          <tr><td>LavaStatus open issues / PRs</td><td>{count(lava.get("open_issues_count", 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus/issues">GitHub tracker</a></td></tr>
-          <tr><td>LavaStatus primary language</td><td>{lava.get("language") or "Not specified"}</td><td><a href="https://github.com/BallisticOK/LavaStatus">Repository metadata</a></td></tr>
-          <tr><td>LavaStatus last push</td><td>{date_only(lava.get("pushed_at"))}</td><td>GitHub repository API</td></tr>
+          <tr><td>LavaStatus stars</td><td>{count(lava.get('stargazers_count', 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
+          <tr><td>LavaStatus forks</td><td>{count(lava.get('forks_count', 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
+          <tr><td>LavaStatus open issues / PRs</td><td>{count(lava.get('open_issues_count', 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus/issues">GitHub tracker</a></td></tr>
+          <tr><td>LavaStatus primary language</td><td>{lava.get('language') or "Not specified"}</td><td><a href="https://github.com/BallisticOK/LavaStatus">Repository metadata</a></td></tr>
+          <tr><td>LavaStatus last push</td><td>{date_only(lava.get('pushed_at'))}</td><td>GitHub repository API</td></tr>
           <tr><td>Last successful data refresh</td><td>{refreshed}</td><td>GitHub Actions · UTC</td></tr>
           </table>"""
           
