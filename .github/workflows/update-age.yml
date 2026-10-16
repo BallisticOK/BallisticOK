@@ -1,6 +1,12 @@
 name: Refresh profile dashboard
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md"
+      - ".github/workflows/update-age.yml"
   schedule:
     - cron: "17 0 * * *"
   workflow_dispatch:
