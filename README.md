@@ -1,156 +1,226 @@
 <!--
-  Profile README for 0x00sec.
-  Age is updated automatically by .github/workflows/update-age.yml.
+  0x00sec profile dashboard.
+  Age + GitHub data panel are refreshed by .github/workflows/update-age.yml.
+  Keep the PROFILE-DATA markers intact: the workflow replaces that section.
 -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,35:0f766e,70:14b8a6,100:99f6e4&height=220&section=header&text=0x00sec&fontSize=68&fontColor=ffffff&fontAlignY=36&desc=Building%20bots%2C%20APIs%20%26%20self-hosted%20systems&descSize=17&descAlignY=58" width="100%" alt="0x00sec profile banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,18:0f172a,42:115e59,72:0d9488,100:99f6e4&height=250&section=header&text=0x00sec&fontSize=76&fontColor=ecfeff&fontAlignY=35&desc=SYSTEMS%20%E2%80%A2%20BOTS%20%E2%80%A2%20APIs%20%E2%80%A2%20INFRASTRUCTURE&descSize=16&descAlignY=57&animation=fadeIn" width="100%" alt="0x00sec cyber teal profile banner" />
 
-# Hey, I'm **0x00sec** 👋
+<a href="https://github.com/BallisticOK"><img src="https://img.shields.io/badge/GitHub-BallisticOK-0d9488?style=for-the-badge&logo=github&logoColor=white" alt="GitHub profile" /></a>
+<a href="https://0x00sec.xyz"><img src="https://img.shields.io/badge/IDENTITY-0x00sec.xyz-0f172a?style=for-the-badge&logo=firefox&logoColor=99f6e4" alt="0x00sec website" /></a>
+<a href="https://github.com/BallisticOK/BallisticOK/actions/workflows/update-age.yml"><img src="https://img.shields.io/github/actions/workflow/status/BallisticOK/BallisticOK/update-age.yml?label=PROFILE%20DATA%20SYNC&style=for-the-badge&logo=githubactions&logoColor=white" alt="Profile data workflow status" /></a>
 
-### Developer • Bot builder • Self-hosting enthusiast
+# 0x00sec <sub>▰</sub>
 
-Formerly known as **BallisticOK** — also known as **AtomicGaming666**.
+### Developer · Bot builder · Self-hosting enthusiast
 
-I build and run online services, Discord bots, APIs, dashboards, and infrastructure. I enjoy taking projects from an idea to something people can actually use, then building the tooling and systems that keep them running.
+**Formerly BallisticOK · Also known as AtomicGaming666**
 
-[![GitHub followers](https://img.shields.io/github/followers/BallisticOK?label=Followers&style=for-the-badge&logo=github&color=14b8a6)](https://github.com/BallisticOK?tab=followers)
-[![GitHub stars](https://img.shields.io/github/stars/BallisticOK?affiliations=OWNER%2CCOLLABORATOR&style=for-the-badge&logo=github&color=0f766e)](https://github.com/BallisticOK?tab=repositories)
-[![Age auto-updated](https://img.shields.io/badge/Age-auto--updated-14b8a6?style=for-the-badge)](https://github.com/BallisticOK)
-[![Website](https://img.shields.io/badge/Website-0x00sec.xyz-0f172a?style=for-the-badge&logo=firefox&logoColor=white)](https://0x00sec.xyz)
+I build and operate Discord bots, APIs, dashboards, and self-hosted infrastructure. I like systems with real utility: services that people can use, backends that can scale, and tooling that makes complex things easier to run.
+
+[About](#-about-the-operator) · [Live services](#-live-service-console) · [Project telemetry](#-project-telemetry) · [GitHub data](#-live-github-intelligence) · [Tech stack](#-technology-matrix) · [Contact](#-connect)
 
 </div>
 
 ---
 
-## 👨‍💻 About me
-
-- 🛠️ I build and operate **Discord bots, APIs, dashboards, and web services**.
-- 🤖 My main bot projects/services are **CTOS** and **Blume**.
-- 🌐 I run services under the **0x00sec** name and domain.
-- 🐳 Interested in Docker, Linux, self-hosting, reverse proxies, and deployment automation.
-- 🎧 Working with music-bot infrastructure, Lavalink/Rainlink, node monitoring, and service APIs.
-- 🧰 I also work on game-server tooling and community projects.
-- 🎂 I'm currently **<span data-profile-age>25</span> years old**.
-
-> I don't publish every project or push every update to GitHub. Some of my work is deployed and maintained as live services, so the project links below include both public repositories and live websites.
-
-## 🚀 Featured projects
+## ◈ About the operator
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="58%" valign="top">
 
-### 🛰️ CTOS
+### What I build
 
-**Discord bot service**
+- **Discord systems** — bots, music playback, dashboards, community tooling, and automation.
+- **Backend services** — REST APIs, integrations, authentication, and data-driven applications.
+- **Infrastructure** — Linux, Docker, reverse proxies, TLS, deployment, and service monitoring.
+- **Audio systems** — Lavalink/Rainlink integrations, node discovery, routing, and failover.
+- **Developer tooling** — scripts, API utilities, CI workflows, and self-hosted applications.
 
-CTOS is one of my main bot projects/services. This is the live service link rather than a promise that its source code is publicly maintained on GitHub.
+### Current identity
 
-[![Open CTOS](https://img.shields.io/badge/OPEN%20CTOS-Live%20Service-14b8a6?style=for-the-badge&logo=discord&logoColor=white)](https://ctos.0x00sec.xyz)
-
-**Focus:** Discord bot features and community tooling.
-
-</td>
-<td width="50%" valign="top">
-
-### 🎵 Blume
-
-**Discord music bot + web dashboard**
-
-Blume combines Discord music playback with a web dashboard, multi-cluster gateway, Lavalink/Rainlink integration, node failover, public listening rooms, analytics, and an optional internal music API.
-
-[![Open Blume](https://img.shields.io/badge/OPEN%20BLUME-Live%20Service-3b82f6?style=for-the-badge&logo=discord&logoColor=white)](https://blume.0x00sec.xyz)
-
-**Focus:** Music playback, dashboard controls, cluster-aware routing, and resilient audio nodes.
+- **Handle:** `0x00sec`
+- **Previous names:** `BallisticOK`, `AtomicGaming666`
+- **Age:** <span data-profile-age>25</span> — automatically calculated
+- **Primary domain:** [0x00sec.xyz](https://0x00sec.xyz)
+- **Approach:** build it, automate it, monitor it, improve it.
 
 </td>
-</tr>
-<tr>
-<td width="100%" valign="top">
+<td width="42%" valign="top">
 
-### 📡 LavaStatus
+### Operating principles
 
-**Community Lavalink node monitor**
+```text
+┌──────────────────────────────┐
+│  0x00SEC / ENGINEERING       │
+├──────────────────────────────┤
+│  > AUTOMATE THE REPETITIVE   │
+│  > MEASURE WHAT MATTERS      │
+│  > DESIGN FOR FAILURE        │
+│  > KEEP SERVICES OBSERVABLE  │
+│  > SHIP USEFUL THINGS        │
+└──────────────────────────────┘
+```
 
-A public registry/monitor that brings together Lavalink nodes from configured sources and the community. Includes a live monitor, API documentation, and a health endpoint.
+**Focus areas**
 
-[![Live monitor](https://img.shields.io/badge/LIVE-Monitor-14b8a6?style=for-the-badge&logo=statuspage&logoColor=white)](https://lavastatus.0x00sec.xyz/)
-[![GitHub stars](https://img.shields.io/github/stars/BallisticOK/LavaStatus?style=flat-square)](https://github.com/BallisticOK/LavaStatus)
-[![GitHub forks](https://img.shields.io/github/forks/BallisticOK/LavaStatus?style=flat-square)](https://github.com/BallisticOK/LavaStatus)
-
-[Source repository](https://github.com/BallisticOK/LavaStatus) · [API docs](https://lavastatus.0x00sec.xyz/api) · [Health](https://lavastatus.0x00sec.xyz/health)
+![Backend](https://img.shields.io/badge/BACKEND-APIs-0f766e?style=flat-square)
+![Automation](https://img.shields.io/badge/AUTOMATION-CI%2FCD-0d9488?style=flat-square)
+![Infrastructure](https://img.shields.io/badge/INFRA-Linux%20%2B%20Docker-115e59?style=flat-square)
+![Services](https://img.shields.io/badge/SERVICES-Always%20evolving-134e4a?style=flat-square)
 
 </td>
-
 </tr>
 </table>
 
-## 📊 GitHub stats
+> Some projects are operated as live services and are not necessarily published as public source repositories. The links below distinguish service access from source-code access.
+
+## ◈ Live service console
+
+<div align="center">
+
+| SERVICE | PURPOSE | OPEN |
+|:--|:--|:--:|
+| **CTOS** | Discord bot service and community tooling | [Launch ↗](https://ctos.0x00sec.xyz) |
+| **Blume** | Discord music bot and web dashboard | [Launch ↗](https://blume.0x00sec.xyz) |
+| **LavaStatus** | Community Lavalink node monitor and API | [Monitor ↗](https://lavastatus.0x00sec.xyz) |
+| **0x00sec** | Main domain and project identity | [Visit ↗](https://0x00sec.xyz) |
+
+</div>
+
+<details>
+<summary><strong>▸ CTOS — service overview</strong></summary>
+
+CTOS is one of my main Discord bot services.
+
+- **Live service:** [ctos.0x00sec.xyz](https://ctos.0x00sec.xyz)
+- **Focus:** Discord bot features and community tooling.
+- **Access:** use the live service link for the current experience.
+
+</details>
+
+<details>
+<summary><strong>▸ Blume — music and audio platform</strong></summary>
+
+Blume brings Discord music playback together with a web dashboard and audio infrastructure.
+
+- **Live service:** [blume.0x00sec.xyz](https://blume.0x00sec.xyz)
+- **Features:** music playback, dashboard controls, multi-cluster gateway, Lavalink/Rainlink integration, node failover, public listening rooms, analytics, and an optional internal music API.
+- **Focus:** reliable playback and cluster-aware audio routing.
+
+</details>
+
+<details>
+<summary><strong>▸ LavaStatus — Lavalink community monitor</strong></summary>
+
+A public project for discovering and monitoring Lavalink nodes from configured sources and community submissions.
+
+<div align="center">
+
+[![Open monitor](https://img.shields.io/badge/OPEN-LavaStatus-0d9488?style=for-the-badge&logo=statuspage&logoColor=white)](https://lavastatus.0x00sec.xyz)
+[![Repository](https://img.shields.io/badge/SOURCE-GitHub-0f172a?style=for-the-badge&logo=github)](https://github.com/BallisticOK/LavaStatus)
+[![Stars](https://img.shields.io/github/stars/BallisticOK/LavaStatus?style=for-the-badge&logo=github&label=STARS&color=14b8a6)](https://github.com/BallisticOK/LavaStatus/stargazers)
+[![Forks](https://img.shields.io/github/forks/BallisticOK/LavaStatus?style=for-the-badge&logo=github&label=FORKS&color=0f766e)](https://github.com/BallisticOK/LavaStatus/network/members)
+
+</div>
+
+- **Live monitor:** [lavastatus.0x00sec.xyz](https://lavastatus.0x00sec.xyz)
+- **API documentation:** [lavastatus.0x00sec.xyz/api](https://lavastatus.0x00sec.xyz/api)
+- **Health endpoint:** [lavastatus.0x00sec.xyz/health](https://lavastatus.0x00sec.xyz/health)
+- **Source repository:** [BallisticOK/LavaStatus](https://github.com/BallisticOK/LavaStatus)
+
+</details>
+
+## ◈ Live GitHub intelligence
+
+The panel below is generated from the **GitHub REST API** by this repository's own GitHub Actions workflow. It refreshes daily and can be refreshed manually from the Actions tab. Counts reflect public GitHub data; they are not estimates.
+
+<!-- PROFILE-DATA:START -->
+<table>
+<tr><th align="left">METRIC</th><th align="left">VALUE</th><th align="left">SOURCE</th></tr>
+<tr><td>Public repositories</td><td>Refreshing automatically</td><td>GitHub API</td></tr>
+<tr><td>Followers</td><td>Refreshing automatically</td><td>GitHub API</td></tr>
+<tr><td>Total stars across owned public repositories</td><td>Refreshing automatically</td><td>GitHub API</td></tr>
+<tr><td>Total forks across owned public repositories</td><td>Refreshing automatically</td><td>GitHub API</td></tr>
+<tr><td>Repositories pushed in the last 30 days</td><td>Refreshing automatically</td><td>GitHub API</td></tr>
+<tr><td>LavaStatus stars / forks / open issues</td><td>Refreshing automatically</td><td>GitHub API</td></tr>
+<tr><td>Last successful data refresh</td><td>On the next workflow run</td><td>GitHub Actions</td></tr>
+</table>
+<!-- PROFILE-DATA:END -->
+
+<div align="center">
+
+[![Followers](https://img.shields.io/github/followers/BallisticOK?label=FOLLOWERS&style=for-the-badge&logo=github&color=0d9488)](https://github.com/BallisticOK?tab=followers)
+[![Public repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FBallisticOK&query=%24.public_repos&label=PUBLIC%20REPOS&style=for-the-badge&logo=github&color=115e59)](https://github.com/BallisticOK?tab=repositories)
+[![Stars](https://img.shields.io/github/stars/BallisticOK?label=REPO%20STARS&style=for-the-badge&logo=github&color=14b8a6)](https://github.com/BallisticOK?tab=repositories)
+[![Last commit](https://img.shields.io/github/last-commit/BallisticOK/BallisticOK?label=PROFILE%20UPDATED&style=for-the-badge&logo=githubactions&color=0f766e)](https://github.com/BallisticOK/BallisticOK/commits/main)
+
+</div>
+
+## ◈ GitHub telemetry
 
 <div align="center">
 
 <a href="https://github.com/BallisticOK">
-  <img height="175" src="https://github-readme-stats.vercel.app/api?username=BallisticOK&show_icons=true&include_all_commits=true&count_private=true&theme=transparent&hide_border=true&title_color=14b8a6&icon_color=14b8a6&text_color=94a3b8" alt="GitHub profile statistics" />
+  <img height="190" src="https://github-readme-stats.vercel.app/api?username=BallisticOK&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&theme=transparent&hide_border=true&bg_color=00000000&title_color=2dd4bf&icon_color=14b8a6&text_color=cbd5e1&custom_title=ACCOUNT%20TELEMETRY" alt="GitHub account telemetry" />
 </a>
 <a href="https://github.com/BallisticOK">
-  <img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BallisticOK&layout=compact&langs_count=8&theme=transparent&hide_border=true&title_color=14b8a6&text_color=94a3b8" alt="Most used programming languages" />
+  <img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BallisticOK&layout=donut-vertical&langs_count=8&theme=transparent&hide_border=true&bg_color=00000000&title_color=2dd4bf&text_color=cbd5e1&custom_title=LANGUAGE%20MIX" alt="Most used programming languages" />
 </a>
 
-<img width="90%" src="https://github-readme-streak-stats.herokuapp.com/?user=BallisticOK&theme=transparent&hide_border=true&ring=14b8a6&fire=f97316&currStreakLabel=14b8a6" alt="GitHub contribution streak" />
+<img width="96%" src="https://github-readme-streak-stats.herokuapp.com/?user=BallisticOK&theme=transparent&hide_border=true&background=00000000&ring=2dd4bf&fire=fb923c&currStreakLabel=2dd4bf&sideLabels=cbd5e1&dates=94a3b8" alt="Contribution streak telemetry" />
 
-<img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=BallisticOK&bg_color=00000000&color=94a3b8&line=14b8a6&point=99f6e4&area=true&hide_border=true" alt="GitHub contribution activity graph" />
-
-</div>
-
-<sub>GitHub statistics are provided by third-party widgets and may be delayed, cached, or unavailable. Private-repository metrics depend on the widget provider's access and configuration.</sub>
-
-## 🧰 What I work with
-
-<div align="center">
-
-![JavaScript](https://img.shields.io/badge/JavaScript-f7df1e?style=for-the-badge&logo=javascript&logoColor=111827)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776ab?style=for-the-badge&logo=python&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-e34f26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572b6?style=for-the-badge&logo=css3&logoColor=white)
-![C Sharp](https://img.shields.io/badge/C%23-512bd4?style=for-the-badge&logo=csharp&logoColor=white)
-
-![Discord.js](https://img.shields.io/badge/Discord.js-5865f2?style=for-the-badge&logo=discord&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ed?style=for-the-badge&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-fcc624?style=for-the-badge&logo=linux&logoColor=111827)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088ff?style=for-the-badge&logo=githubactions&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47a248?style=for-the-badge&logo=mongodb&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+<img width="96%" src="https://github-readme-activity-graph.vercel.app/graph?username=BallisticOK&bg_color=00000000&color=cbd5e1&line=14b8a6&point=99f6e4&area=true&area_color=0f766e&hide_border=true&custom_title=CONTRIBUTION%20ACTIVITY" alt="GitHub contribution activity graph" />
 
 </div>
 
-### Areas I enjoy working on
+<sub>These visualisations are provided by third-party services, so they may occasionally be cached or unavailable. The GitHub API panel above is generated independently by this repository's workflow.</sub>
 
-- **Discord systems:** bots, commands, music, dashboards, moderation, and community utilities.
-- **Backend development:** REST APIs, authentication, SQL/NoSQL data, and service integrations.
-- **Infrastructure:** Linux servers, Docker, reverse proxies, SSL, deployment, and monitoring.
-- **Audio infrastructure:** Lavalink/Rainlink nodes, discovery, health checks, and failover.
-- **Automation:** GitHub Actions, install scripts, deployment workflows, and status reporting.
-
-## 🌐 My services
-
-| Service | What it is | Link |
-|---|---|---|
-| **CTOS** | Discord bot service | [ctos.0x00sec.xyz](https://ctos.0x00sec.xyz) |
-| **Blume** | Discord music bot and dashboard | [blume.0x00sec.xyz](https://blume.0x00sec.xyz) |
-| **LavaStatus** | Lavalink node monitor and API | [lavastatus.0x00sec.xyz](https://lavastatus.0x00sec.xyz/) |
-| **0x00sec** | Main domain / project identity | [0x00sec.xyz](https://0x00sec.xyz) |
-
-## 🔗 Find me online
+## ◈ Technology matrix
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-0x00sec%20%2F%20BallisticOK-181717?style=for-the-badge&logo=github)](https://github.com/BallisticOK)
-[![YouTube](https://img.shields.io/static/v1?message=YouTube&logo=youtube&label=&color=FF0000&logoColor=white&style=for-the-badge)](https://www.youtube.com/channel/UC7SVXOIe-lrT_JtAwVoRCCw)
-[![Twitch](https://img.shields.io/static/v1?message=Twitch&logo=twitch&label=&color=9146FF&logoColor=white&style=for-the-badge)](https://www.twitch.tv/ballisticok)
-[![Discord](https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=5865F2&logoColor=white&style=for-the-badge)](https://discordapp.com/users/321590712665636865)
+### Languages & web
+
+![JavaScript](https://img.shields.io/badge/JavaScript-0f172a?style=for-the-badge&logo=javascript&logoColor=f7df1e)
+![Node.js](https://img.shields.io/badge/Node.js-0f172a?style=for-the-badge&logo=nodedotjs&logoColor=6ee7b7)
+![Python](https://img.shields.io/badge/Python-0f172a?style=for-the-badge&logo=python&logoColor=93c5fd)
+![HTML5](https://img.shields.io/badge/HTML5-0f172a?style=for-the-badge&logo=html5&logoColor=fb923c)
+![CSS3](https://img.shields.io/badge/CSS3-0f172a?style=for-the-badge&logo=css3&logoColor=60a5fa)
+![C Sharp](https://img.shields.io/badge/C%23-0f172a?style=for-the-badge&logo=csharp&logoColor=c4b5fd)
+
+### Platforms & operations
+
+![Discord.js](https://img.shields.io/badge/Discord.js-0f172a?style=for-the-badge&logo=discord&logoColor=818cf8)
+![Docker](https://img.shields.io/badge/Docker-0f172a?style=for-the-badge&logo=docker&logoColor=38bdf8)
+![Linux](https://img.shields.io/badge/Linux-0f172a?style=for-the-badge&logo=linux&logoColor=facc15)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0f172a?style=for-the-badge&logo=githubactions&logoColor=60a5fa)
+![Nginx](https://img.shields.io/badge/Nginx-0f172a?style=for-the-badge&logo=nginx&logoColor=34d399)
+![MariaDB](https://img.shields.io/badge/MariaDB-0f172a?style=for-the-badge&logo=mariadb&logoColor=7dd3fc)
+![MongoDB](https://img.shields.io/badge/MongoDB-0f172a?style=for-the-badge&logo=mongodb&logoColor=86efac)
+
+</div>
+
+| Domain | Areas of interest |
+|:--|:--|
+| **Bot engineering** | Commands, audio playback, integrations, dashboards, automation |
+| **Backend & APIs** | REST endpoints, authentication, SQL/NoSQL, service integrations |
+| **Infrastructure** | Linux, Docker, reverse proxies, TLS, deployment and observability |
+| **Audio systems** | Lavalink/Rainlink, node discovery, routing, health checks and failover |
+| **Automation** | GitHub Actions, repeatable scripts, scheduled tasks and status reporting |
+
+## ◈ Connect
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-BallisticOK-0f172a?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BallisticOK)
+[![Website](https://img.shields.io/badge/Website-0x00sec.xyz-0d9488?style=for-the-badge&logo=firefox&logoColor=white)](https://0x00sec.xyz)
+[![YouTube](https://img.shields.io/badge/YouTube-Channel-0f172a?style=for-the-badge&logo=youtube&logoColor=ef4444)](https://www.youtube.com/channel/UC7SVXOIe-lrT_JtAwVoRCCw)
+[![Twitch](https://img.shields.io/badge/Twitch-BallisticOK-0f172a?style=for-the-badge&logo=twitch&logoColor=c4b5fd)](https://www.twitch.tv/ballisticok)
+[![Discord](https://img.shields.io/badge/Discord-Profile-0f172a?style=for-the-badge&logo=discord&logoColor=818cf8)](https://discordapp.com/users/321590712665636865)
 
 </div>
 
@@ -158,10 +228,10 @@ A public registry/monitor that brings together Lavalink nodes from configured so
 
 <div align="center">
 
-### Thanks for stopping by 👾
+**[ SYSTEM ONLINE ]** · Thanks for visiting.
 
-*Old usernames, new identity — still building.*
+<sub>Old handles. New identity. Always building.</sub>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99f6e4,45:14b8a6,100:0f172a&height=110&section=footer" width="100%" alt="" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:99f6e4,35:14b8a6,68:0f766e,100:020617&height=140&section=footer" width="100%" alt="Teal cyber footer" />
 
 </div>
