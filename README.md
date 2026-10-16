@@ -141,18 +141,14 @@ The panel below is generated from the **GitHub REST API** by this repository's o
 <!-- PROFILE-DATA:START -->
 <table>
 <tr><th align="left">METRIC</th><th align="left">LIVE VALUE</th><th align="left">SOURCE</th></tr>
-<tr><td>Public repositories</td><td>39</td><td>GitHub account API</td></tr>
-<tr><td>Followers</td><td>1</td><td>GitHub account API</td></tr>
-<tr><td>Following</td><td>4</td><td>GitHub account API</td></tr>
-<tr><td>Stars across owned public repositories</td><td>2</td><td>GitHub repositories API · forks excluded</td></tr>
-<tr><td>Forks across owned public repositories</td><td>2</td><td>GitHub repositories API · forks excluded</td></tr>
-<tr><td>Owned public repositories pushed in the last 30 days</td><td>2</td><td>GitHub repositories API</td></tr>
-<tr><td>LavaStatus stars</td><td>0</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
-<tr><td>LavaStatus forks</td><td>1</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
-<tr><td>LavaStatus open issues / PRs</td><td>1</td><td><a href="https://github.com/BallisticOK/LavaStatus/issues">GitHub tracker</a></td></tr>
-<tr><td>LavaStatus primary language</td><td>Not specified</td><td><a href="https://github.com/BallisticOK/LavaStatus">Repository metadata</a></td></tr>
-<tr><td>LavaStatus last push</td><td>2026-10-09 03:57 UTC</td><td>GitHub repository API</td></tr>
-<tr><td>Last successful data refresh</td><td>2026-10-16 09:38 UTC</td><td>GitHub Actions · UTC</td></tr>
+<tr><td>Public repositories</td><td><a href="https://github.com/BallisticOK?tab=repositories"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FBallisticOK&query=%24.public_repos&label=PUBLIC%20REPOS&style=flat-square&color=0d9488" alt="Public repositories" /></a></td><td>GitHub account API</td></tr>
+<tr><td>Followers</td><td><a href="https://github.com/BallisticOK?tab=followers"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FBallisticOK&query=%24.followers&label=FOLLOWERS&style=flat-square&color=0d9488" alt="GitHub followers" /></a></td><td>GitHub account API</td></tr>
+<tr><td>Following</td><td><a href="https://github.com/BallisticOK"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FBallisticOK&query=%24.following&label=FOLLOWING&style=flat-square&color=0f766e" alt="Following" /></a></td><td>GitHub account API</td></tr>
+<tr><td>Stars across owned public repositories</td><td>Daily API aggregation enabled · refresh on first successful workflow run</td><td>GitHub repositories API · forks excluded</td></tr>
+<tr><td>Forks across owned public repositories</td><td>Daily API aggregation enabled · refresh on first successful workflow run</td><td>GitHub repositories API · forks excluded</td></tr>
+<tr><td>Owned public repositories pushed in the last 30 days</td><td>Daily activity calculation enabled · refresh on first successful workflow run</td><td>GitHub repositories API</td></tr>
+<tr><td>LavaStatus stars / forks / open issues</td><td><a href="https://github.com/BallisticOK/LavaStatus"><img src="https://img.shields.io/github/stars/BallisticOK/LavaStatus?style=flat-square&color=14b8a6" alt="LavaStatus stars" /></a> <a href="https://github.com/BallisticOK/LavaStatus/network/members"><img src="https://img.shields.io/github/forks/BallisticOK/LavaStatus?style=flat-square&color=0f766e" alt="LavaStatus forks" /></a> <a href="https://github.com/BallisticOK/LavaStatus/issues"><img src="https://img.shields.io/github/issues/BallisticOK/LavaStatus?style=flat-square&color=115e59" alt="LavaStatus open issues" /></a></td><td>GitHub repository API</td></tr>
+<tr><td>Last successful data refresh</td><td>Automatic sync configured · daily + on profile changes</td><td><a href="https://github.com/BallisticOK/BallisticOK/actions/workflows/update-age.yml">GitHub Actions</a></td></tr>
 </table>
 <!-- PROFILE-DATA:END -->
 
