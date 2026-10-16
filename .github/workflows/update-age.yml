@@ -38,7 +38,7 @@ jobs:
               count=1,
           )
 
-          if count != 1:
+          if count < 1:
               raise SystemExit("Age markers not found in README.md")
 
           if updated != content:
