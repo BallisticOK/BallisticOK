@@ -105,7 +105,7 @@ jobs:
           <tr><td>LavaStatus stars</td><td>{count(lava.get('stargazers_count', 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
           <tr><td>LavaStatus forks</td><td>{count(lava.get('forks_count', 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
           <tr><td>LavaStatus open issues / PRs</td><td>{count(lava.get('open_issues_count', 0))}</td><td><a href="https://github.com/BallisticOK/LavaStatus/issues">GitHub tracker</a></td></tr>
-          <tr><td>LavaStatus primary language</td><td>{lava.get('language') or "Not specified"}</td><td><a href="https://github.com/BallisticOK/LavaStatus">Repository metadata</a></td></tr>
+          <tr><td>LavaStatus primary language</td><td>{lava.get('language') or 'Not specified'}</td><td><a href="https://github.com/BallisticOK/LavaStatus">Repository metadata</a></td></tr>
           <tr><td>LavaStatus last push</td><td>{date_only(lava.get('pushed_at'))}</td><td>GitHub repository API</td></tr>
           <tr><td>Last successful data refresh</td><td>{refreshed}</td><td>GitHub Actions · UTC</td></tr>
           </table>"""
