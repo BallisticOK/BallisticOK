@@ -68,7 +68,7 @@ Blume combines Discord music playback with a web dashboard, multi-cluster gatewa
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="100%" valign="top">
 
 ### 📡 LavaStatus
 
@@ -76,24 +76,14 @@ Blume combines Discord music playback with a web dashboard, multi-cluster gatewa
 
 A public registry/monitor that brings together Lavalink nodes from configured sources and the community. Includes a live monitor, API documentation, and a health endpoint.
 
-[![Live monitor](https://img.shields.io/badge/LIVE-Monitor-14b8a6?style=for-the-badge&logo=statuspage&logoColor=white)](https://lavastatus.ballisticok.xyz/)
+[![Live monitor](https://img.shields.io/badge/LIVE-Monitor-14b8a6?style=for-the-badge&logo=statuspage&logoColor=white)](https://lavastatus.0x00sec.xyz/)
 [![GitHub stars](https://img.shields.io/github/stars/BallisticOK/LavaStatus?style=flat-square)](https://github.com/BallisticOK/LavaStatus)
 [![GitHub forks](https://img.shields.io/github/forks/BallisticOK/LavaStatus?style=flat-square)](https://github.com/BallisticOK/LavaStatus)
 
-[Source repository](https://github.com/BallisticOK/LavaStatus) · [API docs](https://lavastatus.ballisticok.xyz/api) · [Health](https://lavastatus.ballisticok.xyz/health)
+[Source repository](https://github.com/BallisticOK/LavaStatus) · [API docs](https://lavastatus.0x00sec.xyz/api) · [Health](https://lavastatus.0x00sec.xyz/health)
 
 </td>
-<td width="50%" valign="top">
 
-### 🧩 NekoNexus
-
-**Community game-server project**
-
-A community project focused on running UberStrike-compatible servers with free software, cross-platform hosting, Docker support, and a modern admin dashboard.
-
-[![Repository](https://img.shields.io/badge/VIEW-Repository-0f172a?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BallisticOK/NekoNexus)
-
-</td>
 </tr>
 </table>
 
@@ -150,7 +140,7 @@ A community project focused on running UberStrike-compatible servers with free s
 |---|---|---|
 | **CTOS** | Discord bot service | [ctos.0x00sec.xyz](https://ctos.0x00sec.xyz) |
 | **Blume** | Discord music bot and dashboard | [blume.0x00sec.xyz](https://blume.0x00sec.xyz) |
-| **LavaStatus** | Lavalink node monitor and API | [lavastatus.ballisticok.xyz](https://lavastatus.ballisticok.xyz/) |
+| **LavaStatus** | Lavalink node monitor and API | [lavastatus.0x00sec.xyz](https://lavastatus.0x00sec.xyz/) |
 | **0x00sec** | Main domain / project identity | [0x00sec.xyz](https://0x00sec.xyz) |
 
 ## 🔗 Find me online
