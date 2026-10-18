@@ -141,7 +141,7 @@ The panel below is generated from the **GitHub REST API** by this repository's o
 <!-- PROFILE-DATA:START -->
 <table>
 <tr><th align="left">METRIC</th><th align="left">LIVE VALUE</th><th align="left">SOURCE</th></tr>
-<tr><td>Public repositories</td><td>40</td><td>GitHub account API</td></tr>
+<tr><td>Public repositories</td><td>41</td><td>GitHub account API</td></tr>
 <tr><td>Followers</td><td>1</td><td>GitHub account API</td></tr>
 <tr><td>Following</td><td>4</td><td>GitHub account API</td></tr>
 <tr><td>Stars across owned public repositories</td><td>2</td><td>GitHub repositories API · forks excluded</td></tr>
@@ -152,7 +152,7 @@ The panel below is generated from the **GitHub REST API** by this repository's o
 <tr><td>LavaStatus open issues / PRs</td><td>1</td><td><a href="https://github.com/BallisticOK/LavaStatus/issues">GitHub tracker</a></td></tr>
 <tr><td>LavaStatus primary language</td><td>Not specified</td><td><a href="https://github.com/BallisticOK/LavaStatus">Repository metadata</a></td></tr>
 <tr><td>LavaStatus last push</td><td>2026-10-09 03:57 UTC</td><td>GitHub repository API</td></tr>
-<tr><td>Last successful data refresh</td><td>2026-10-17 04:38 UTC</td><td>GitHub Actions · UTC</td></tr>
+<tr><td>Last successful data refresh</td><td>2026-10-18 04:44 UTC</td><td>GitHub Actions · UTC</td></tr>
 </table>
 <!-- PROFILE-DATA:END -->
 
