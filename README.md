@@ -151,8 +151,8 @@ The panel below is generated from the **GitHub REST API** by this repository's o
 <tr><td>LavaStatus forks</td><td>1</td><td><a href="https://github.com/BallisticOK/LavaStatus">LavaStatus repository</a></td></tr>
 <tr><td>LavaStatus open issues / PRs</td><td>0</td><td><a href="https://github.com/BallisticOK/LavaStatus/issues">GitHub tracker</a></td></tr>
 <tr><td>LavaStatus primary language</td><td>Not specified</td><td><a href="https://github.com/BallisticOK/LavaStatus">Repository metadata</a></td></tr>
-<tr><td>LavaStatus last push</td><td>2026-11-09 02:31 UTC</td><td>GitHub repository API</td></tr>
-<tr><td>Last successful data refresh</td><td>2026-11-18 07:40 UTC</td><td>GitHub Actions · UTC</td></tr>
+<tr><td>LavaStatus last push</td><td>2026-11-18 14:46 UTC</td><td>GitHub repository API</td></tr>
+<tr><td>Last successful data refresh</td><td>2026-11-19 07:37 UTC</td><td>GitHub Actions · UTC</td></tr>
 </table>
 <!-- PROFILE-DATA:END -->
 
